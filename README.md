@@ -16,5 +16,7 @@ Esse foi meu primeiro projeto na minha carreira como dev android, que comecou em
 </br>
 
 <p float="left" align="center">
-TELAS DO APLICATIVO. FOQUE EM MOSTRAR O QUE É BONITO E IMPORTANTE NO SEU APLICATIVO
+<img alt="screenshots" width="30%" øsrc="screenshots/Screenshot_1.png"/>
+<img alt="screenshots" width="30%" src="screenshots/Screenshot_2.png"/>
+<img alt="screenshots" width="30%" src="screenshots/Screenshot_3.png"/>
 </p>
