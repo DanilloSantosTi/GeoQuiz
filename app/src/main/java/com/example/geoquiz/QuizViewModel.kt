@@ -54,4 +54,16 @@ class QuizViewModel(private val savedStateHandle: SavedStateHandle) : ViewModel(
 
         return "Congratulations! You got $percentage% of the questions correct"
     }
+
+    fun checkAnswer(useAnswer: Boolean): Int {
+        val responseAnswer = currentQuestionAnswer
+
+        return if (responseAnswer == useAnswer) {
+            setCorrectAnswer(
+                "Question: $getCurrentIndex",
+                "Response: $useAnswer"
+            )
+            R.string.correct_response
+        } else R.string.incorrect_response
+    }
 }

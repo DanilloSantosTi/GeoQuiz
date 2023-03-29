@@ -69,18 +69,8 @@ class MainActivity : AppCompatActivity() {
 
     private fun checkAnswer(useAnswer: Boolean) {
         val contextView = findViewById<View>(android.R.id.content)
-        val responseAnswer = quizViewModel.currentQuestionAnswer
 
-        val messageId =
-            if (responseAnswer == useAnswer) {
-                quizViewModel.setCorrectAnswer(
-                    "Question: ${quizViewModel.getCurrentIndex}",
-                    "Response: $useAnswer"
-                )
-                R.string.correct_response
-            } else R.string.incorrect_response
-
-        Snackbar.make(contextView, messageId, Snackbar.LENGTH_SHORT).show()
+        Snackbar.make(contextView, quizViewModel.checkAnswer(useAnswer), Snackbar.LENGTH_SHORT).show()
     }
 
     private fun disableOrEnableButton(
