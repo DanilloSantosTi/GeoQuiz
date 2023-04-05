@@ -12,7 +12,7 @@
 Esse foi meu primeiro projeto na minha carreira como dev android, que comecou em meados de 2017. Foi feito quando eu estava no primeiro período da faculdade.
 
 <p float="left" align="center">
-<img alt="screenshots" width="30%" src="screenshots/Screen_1.gif"/>
+<img width="30%" src="screenshots/screen_1.gif"/>
 </p>
 
 </p>
