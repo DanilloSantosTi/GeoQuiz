@@ -10,12 +10,21 @@
 ⭐ Esse é um projeto para demonstrar meu conhecimento técnico no desenvolvimento Android nativo com Kotlin. Mais informações técnicas abaixo.
 
 Esse foi meu primeiro projeto na minha carreira como dev android, que comecou em meados de 2017. Foi feito quando eu estava no primeiro período da faculdade.
+  
+</p>
+
+## Telas
+<p float="left" align="center">
+<img width="30%" src="screenshots/Screenshots_1.png"/>
+<img width="30%" src="screenshots/Screenshots_2.png"/>
+</p>
+
+# Fluxo do usuário
 
 <p float="left" align="center">
 <img width="30%" src="screenshots/screen-1.gif"/>
 </p>
 
-</p>
 
 ## Tecnologias usadas e bibliotecas de código aberto
 
