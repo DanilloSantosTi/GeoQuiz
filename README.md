@@ -15,11 +15,11 @@ Esse foi meu primeiro projeto na minha carreira como dev android, que comecou em
 
 ## Telas
 <p float="left" align="center">
-<img width="30%" src="screenshots/Screenshots_1.png"/>
-<img width="30%" src="screenshots/Screenshots_2.png"/>
+<img width="30%" src="screenshots/Screenshot_1.png"/>
+<img width="30%" src="screenshots/Screenshot_2.png"/>
 </p>
 
-# Fluxo do usuário
+## Fluxo do usuário
 
 <p float="left" align="center">
 <img width="30%" src="screenshots/screen-1.gif"/>
