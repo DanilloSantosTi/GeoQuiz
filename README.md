@@ -14,14 +14,14 @@ Esse foi meu primeiro projeto na minha carreira como dev android, que comecou em
 </p>
 
 ## Telas
-<p float="left" align="center">
+<p float="left" align="left">
 <img width="30%" src="screenshots/Screenshot_1.png"/>
 <img width="30%" src="screenshots/Screenshot_2.png"/>
 </p>
 
 ## Fluxo do usuário
 
-<p float="left" align="center">
+<p float="left" align="left">
 <img width="30%" src="screenshots/screen-1.gif"/>
 </p>
 
