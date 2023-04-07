@@ -22,7 +22,7 @@ Esse foi meu primeiro projeto na minha carreira como dev android, que comecou em
 ## Fluxo do usuário
 
 <p float="left" align="left">
-<img width="30%" src="screenshots/screen-1.gif"/>
+<img width="30%" src="screenshots/screen-2.gif"/>
 </p>
 
 
