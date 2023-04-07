@@ -7,6 +7,7 @@ import androidx.lifecycle.ViewModel
 private const val MAX_PERCENT = 100
 const val CURRENT_INDEX_KEY = "CURRENT_INDEX_KEY"
 const val IS_CHEATER_KEY = "IS_CHEATER_KEY"
+const val MAX_CHEAT = 3
 
 class QuizViewModel(private val savedStateHandle: SavedStateHandle) : ViewModel() {
     private val questionBank = listOf(
@@ -76,6 +77,8 @@ class QuizViewModel(private val savedStateHandle: SavedStateHandle) : ViewModel(
     fun getAnswerCheater(): Boolean {
         return userAnswerCheat[getCurrentIndex] == true
     }
+
+    val threeTimesCheat: Boolean get() = userAnswerCheat.size >= MAX_CHEAT
 
     fun checkAnswer(useAnswer: Boolean): Int {
         val responseAnswer = currentQuestionAnswer

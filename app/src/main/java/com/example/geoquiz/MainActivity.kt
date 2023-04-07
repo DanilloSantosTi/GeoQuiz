@@ -1,13 +1,19 @@
 package com.example.geoquiz
 
 import android.app.Activity
+import android.graphics.RenderEffect
+import android.graphics.Shader
+import android.os.Build
 import android.os.Bundle
 import android.view.View
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.activity.viewModels
+import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import com.example.geoquiz.databinding.ActivityMainBinding
 import com.google.android.material.snackbar.Snackbar
+
+const val RADIUS_X_AND_Y = 10.0f
 
 class MainActivity : AppCompatActivity() {
 
@@ -28,6 +34,9 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         updateQuestion()
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+            blurCheatButton()
+        }
 
         binding.cheatButton.setOnClickListener {
             val answerIsTrue = quizViewModel.currentQuestionAnswer
@@ -81,10 +90,22 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    @RequiresApi(Build.VERSION_CODES.S)
+    private fun blurCheatButton() {
+        val effect = RenderEffect.createBlurEffect(
+            RADIUS_X_AND_Y,
+            RADIUS_X_AND_Y,
+            Shader.TileMode.CLAMP
+        )
+        binding.cheatButton.setRenderEffect(effect)
+    }
+
     private fun updateQuestion() {
         binding.questionTextView.setText(quizViewModel.currentQuestionText)
 
         quizViewModel.isCheater = quizViewModel.getAnswerCheater()
+
+        if (quizViewModel.threeTimesCheat) binding.cheatButton.isEnabled = false
 
     }
 
